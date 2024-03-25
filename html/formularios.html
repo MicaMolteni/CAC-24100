@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Action me dice adonde se envia el formulario-->
+    <form action="./resultado.html" 
+    method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre"
+            name="nombre">
+        </div>
+        
+        <div>
+            <label>Edad</label>
+            <input type="number" 
+            name="edad"
+            min="0"
+            max="120"
+            value="38">
+        </div>
+        <hr>
+
+        <div>
+            <label for="fechaNac">Fecha de Nacimiento:</label>
+            <input id="fechaNac"
+            name="fechaNac"
+            value="2020-01-15"
+            type="date">
+        </div>
+        
+        <div>
+            <span>Turno</span>
+            <div>
+                <input type="radio" 
+                name="turno"
+                value="tarde"
+                checked> Tarde
+                <input type="radio" 
+                name="turno"
+                value="mañana"> Mañana
+            </div>
+        </div>
+        
+        <div>
+            <label >Estudios: </label>
+            <span>Primaria</span>
+            <input type="checkbox"
+            name="estudios"
+            value="pri"
+            checked>
+            <span>Secundaria</span>
+            <input type="checkbox"
+            name="estudios"
+            value="pri">
+            
+        </div>
+        <div>
+            <label>Nacionalidad</label>
+            <select id="nacionalidad"
+            nombre="nacionalidad">
+            <option value="1">Argentina</option>
+            <option value="2">Paraguay</option>
+            <option value="3" selected>Brasil</option>
+            <option value="4">Chile</option>
+        </select>
+        </div>
+        <hr>
+        <div>
+            <label for="datos adicionales">Datos adicionales</label>
+            <textarea 
+            id="datos adicionales"
+            nombre="datos adicionales"
+            cols="50" 
+            rows="5">
+            </textarea>
+
+        </div>
+        <div>
+            <label>CV</label>
+            <input type="file">
+        </div>
+        <button>
+            Enviar
+        </button>
+
+    </form>
+
+    <section>
+        <h2>Login</h2>
+        <form>
+            <label>Usuario*</label>
+            <input type="text" required>
+            <label>Password</label>
+            <input type="password">
+            <button>
+                Login
+            </button>
+
+        </form>
+    </section>
+    <section>
+        <form action="http://www.google.com">
+            <h3>Buscar</h3>
+        <input type="search" name="q">
+        <button>
+            Buscar
+        </button>
+        </form>
+        
+
+    </section>
+    <section>
+        <form action="./resultado.html">
+            <h3>Buscar</h3>
+        <input type="search" name="q">
+        <button>
+            Buscar
+        </button>
+        </form>
+        
+
+    </section>
+</body>
+</html>
